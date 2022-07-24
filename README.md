@@ -1,5 +1,7 @@
 # Readme
 ## Instações Necessárias
+### npm i Math
+
 
 
 ## Bases de Pesquisas
