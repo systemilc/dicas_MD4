@@ -1,3 +1,3 @@
 export const banco = {
-    Banco:[]
+    arrBanco:[]
 }

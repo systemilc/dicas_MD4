@@ -1,15 +1,18 @@
-import { banco } from "../infra/banco";
+import { banco } from "../infra/banco.js";
 
 class databaseMetodos{
     static gerarDica(){
-        const x = Math.random() * banco.banco.length
+        let x = Math.random() * banco.arrBanco.length
         x = Math.floor(x)
         console.log(x)
-        return banco.banco.length >= 1 ? banco.banco[x]: banco.banco
+        return banco.arrBanco.length >= 1 ? banco.arrBanco[x]: banco.arrBanco
     }
 
     static novaDica(dica){
-        banco.banco = [...banco.banco, dica]
-        return banco.banco
+        banco.arrBanco = [...banco.arrBanco, dica];
+        return banco.arrBanco;
+
     }
 }
+
+export default databaseMetodos
